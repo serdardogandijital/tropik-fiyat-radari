@@ -1,0 +1,703 @@
+{
+ "date": "2026-11-12",
+ "products": [
+  {
+   "key": "fuerte_200_adet",
+   "name": "Fuerte avokado (200 g+), 1 adet",
+   "unit": "adet",
+   "our": 80.0,
+   "cheapest": null,
+   "avg": null,
+   "rank": 1,
+   "n": 1,
+   "sites": [
+    {
+     "site": "Tropik Hasat",
+     "own": true,
+     "url": "https://tropikhasat.com/products/20-adet-fuerte-avokado250-gr-ustu",
+     "price": 80.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       80.0
+      ]
+     ]
+    },
+    {
+     "site": "Bizim Tropikal",
+     "own": true,
+     "url": "https://bizimtropikal.com/products/fuerte-avokado-50-adet-250-gram-uzeri",
+     "price": 80.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       80.0
+      ]
+     ]
+    },
+    {
+     "site": "Ejder Meyvesi",
+     "own": false,
+     "url": "https://ejdermeyvesi.com/1-adet-avokado-fuerte-200-250-gr-arasi",
+     "price": null,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ilk bot taramasında gelecek",
+     "series": []
+    }
+   ]
+  },
+  {
+   "key": "fuerte_250_adet",
+   "name": "Fuerte avokado (250 g+), 1 adet",
+   "unit": "adet",
+   "our": 90.0,
+   "cheapest": {
+    "site": "Ailemin Avokadocusu",
+    "price": 100.0
+   },
+   "avg": 110.0,
+   "rank": 1,
+   "n": 3,
+   "sites": [
+    {
+     "site": "Tropik Hasat",
+     "own": true,
+     "url": "https://tropikhasat.com/products/fuerte-avokado-jumbo-adetle",
+     "price": 90.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       90.0
+      ]
+     ]
+    },
+    {
+     "site": "Avokadocu Ayşe",
+     "own": false,
+     "url": "https://www.avokadocuayse.com/urunlerimiz/buyuk-boy-fuerte-avokado/?attribute_pa_adet=1-adet",
+     "price": 120.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       120.0
+      ]
+     ]
+    },
+    {
+     "site": "Ailemin Avokadocusu",
+     "own": false,
+     "url": "https://aileminavokadocusu.com/urun/1-adet-fuerte-avokado-100-tl-250-gr-ve-ustu/",
+     "price": 100.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       100.0
+      ]
+     ]
+    },
+    {
+     "site": "Ejder Meyvesi",
+     "own": false,
+     "url": "https://ejdermeyvesi.com/1-adet-avokado-fuerte-250-300-gr-arasi",
+     "price": null,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ilk bot taramasında gelecek",
+     "series": []
+    }
+   ]
+  },
+  {
+   "key": "fuerte_10_adet",
+   "name": "Fuerte avokado, 10'lu paket (adet fiyatı)",
+   "unit": "adet",
+   "our": 74.0,
+   "cheapest": {
+    "site": "Ailemin Avokadocusu",
+    "price": 100.0
+   },
+   "avg": 107.5,
+   "rank": 1,
+   "n": 3,
+   "sites": [
+    {
+     "site": "Tropik Hasat",
+     "own": true,
+     "url": "https://tropikhasat.com/products/20-adet-fuerte-avokado250-gr-ustu",
+     "price": 74.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       74.0
+      ]
+     ]
+    },
+    {
+     "site": "Bizim Tropikal",
+     "own": true,
+     "url": "https://bizimtropikal.com/products/fuerte-avokado-50-adet-250-gram-uzeri",
+     "price": 76.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       76.0
+      ]
+     ]
+    },
+    {
+     "site": "Avokadocu Ayşe",
+     "own": false,
+     "url": "https://www.avokadocuayse.com/urunlerimiz/buyuk-boy-fuerte-avokado/?attribute_pa_adet=10-adet",
+     "price": 115.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       115.0
+      ]
+     ]
+    },
+    {
+     "site": "Ailemin Avokadocusu",
+     "own": false,
+     "url": "https://aileminavokadocusu.com/urun/10-adet-fuerte-avokado-1000-tl-ucretsiz-kargo/",
+     "price": 100.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       100.0
+      ]
+     ]
+    },
+    {
+     "site": "Ejder Meyvesi",
+     "own": false,
+     "url": "https://ejdermeyvesi.com/10-adet-avokado-fuerte",
+     "price": null,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ilk bot taramasında gelecek",
+     "series": []
+    }
+   ]
+  },
+  {
+   "key": "avokado_kg",
+   "name": "Avokado, 1 kg",
+   "unit": "kg",
+   "our": 270.0,
+   "cheapest": {
+    "site": "Zahide'nin Bahçesi",
+    "price": 170.0
+   },
+   "avg": 299.6666666666667,
+   "rank": 2,
+   "n": 4,
+   "sites": [
+    {
+     "site": "Tropik Hasat",
+     "own": true,
+     "url": "https://tropikhasat.com/products/50-adet-fuerte-avokado250-gr-ustu",
+     "price": 275.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       275.0
+      ]
+     ]
+    },
+    {
+     "site": "Bizim Tropikal",
+     "own": true,
+     "url": "https://bizimtropikal.com/products/fuerte-buyuk-boy-15-adet-250-gram-uzeri",
+     "price": 270.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       270.0
+      ]
+     ]
+    },
+    {
+     "site": "Çiftçilerden",
+     "own": false,
+     "url": "https://ciftcilerden.com/alanya-avokado-1-kg",
+     "price": 329.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "True",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       329.0
+      ]
+     ]
+    },
+    {
+     "site": "Ailemin Avokadocusu",
+     "own": false,
+     "url": "https://aileminavokadocusu.com/urun/1-kilo-avokado/",
+     "price": 400.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       400.0
+      ]
+     ]
+    },
+    {
+     "site": "Zahide'nin Bahçesi",
+     "own": false,
+     "url": "https://zahidenintropikalbahcesi.com/product/fuerte-avokado-kg/",
+     "price": 170.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       170.0
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "key": "baby_avokado",
+   "name": "Baby / bebek avokado (kg fiyatı)",
+   "unit": "kg",
+   "our": 380.0,
+   "cheapest": null,
+   "avg": null,
+   "rank": 1,
+   "n": 1,
+   "sites": [
+    {
+     "site": "Tropik Hasat",
+     "own": true,
+     "url": "https://tropikhasat.com/products/baby-avokado",
+     "price": 380.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       380.0
+      ]
+     ]
+    },
+    {
+     "site": "Bizim Tropikal",
+     "own": true,
+     "url": "https://bizimtropikal.com/products/baby-avokado",
+     "price": 380.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       380.0
+      ]
+     ]
+    },
+    {
+     "site": "Ejder Meyvesi",
+     "own": false,
+     "url": "https://ejdermeyvesi.com/bebek-avokado",
+     "price": null,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ilk bot taramasında gelecek",
+     "series": []
+    }
+   ]
+  },
+  {
+   "key": "bacon_adet",
+   "name": "Bacon avokado, 1 adet",
+   "unit": "adet",
+   "our": 85.0,
+   "cheapest": null,
+   "avg": null,
+   "rank": 1,
+   "n": 1,
+   "sites": [
+    {
+     "site": "Tropik Hasat",
+     "own": true,
+     "url": "https://tropikhasat.com/products/bacon-avokado-1",
+     "price": 85.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       85.0
+      ]
+     ]
+    },
+    {
+     "site": "Ejder Meyvesi",
+     "own": false,
+     "url": "https://ejdermeyvesi.com/1-adet-avokado-bacon",
+     "price": null,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ilk bot taramasında gelecek",
+     "series": []
+    }
+   ]
+  },
+  {
+   "key": "ejder_kg",
+   "name": "Ejder meyvesi, 1 kg",
+   "unit": "kg",
+   "our": 330.0,
+   "cheapest": {
+    "site": "GSR Tropik",
+    "price": 400.0
+   },
+   "avg": 400.0,
+   "rank": 1,
+   "n": 2,
+   "sites": [
+    {
+     "site": "Tropik Hasat",
+     "own": true,
+     "url": "https://tropikhasat.com/products/ejder-meyvesi-kucuk-boy",
+     "price": 330.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       330.0
+      ]
+     ]
+    },
+    {
+     "site": "GSR Tropik",
+     "own": false,
+     "url": "https://gsrtropik.com/ejder-meyvesi--beyaz--1-kg-p-26",
+     "price": 400.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "True",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       400.0
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "key": "papaya_kg",
+   "name": "Papaya, 1 kg",
+   "unit": "kg",
+   "our": 190.0,
+   "cheapest": {
+    "site": "GSR Tropik",
+    "price": 500.0
+   },
+   "avg": 500.0,
+   "rank": 1,
+   "n": 2,
+   "sites": [
+    {
+     "site": "Tropik Hasat",
+     "own": true,
+     "url": "https://tropikhasat.com/products/papaya",
+     "price": 190.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       190.0
+      ]
+     ]
+    },
+    {
+     "site": "GSR Tropik",
+     "own": false,
+     "url": "https://gsrtropik.com/papaya-1-kg-p-7",
+     "price": 500.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "True",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       500.0
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "key": "longan_kg",
+   "name": "Longan (kg fiyatına çevrilmiş)",
+   "unit": "kg",
+   "our": 1780.0,
+   "cheapest": null,
+   "avg": null,
+   "rank": 1,
+   "n": 1,
+   "sites": [
+    {
+     "site": "Tropik Hasat",
+     "own": true,
+     "url": "https://tropikhasat.com/products/longan-1",
+     "price": 1780.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       1780.0
+      ]
+     ]
+    },
+    {
+     "site": "Avokadocu Ayşe",
+     "own": false,
+     "url": "https://www.avokadocuayse.com/urunlerimiz/longan-ejderha-gozu-meyvesi-250-gr/",
+     "price": 800.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "False",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       800.0
+      ]
+     ]
+    },
+    {
+     "site": "Ejder Meyvesi",
+     "own": false,
+     "url": "https://ejdermeyvesi.com/125-gr-longan-ejderha-gozu",
+     "price": 1592.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "False",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       1592.0
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "key": "mango_kg",
+   "name": "Yerli mango, 1 kg",
+   "unit": "kg",
+   "our": 355.0,
+   "cheapest": {
+    "site": "Ailemin Avokadocusu",
+    "price": 350.0
+   },
+   "avg": 350.0,
+   "rank": 2,
+   "n": 2,
+   "sites": [
+    {
+     "site": "Tropik Hasat",
+     "own": true,
+     "url": "https://tropikhasat.com/products/yerli-mango",
+     "price": 375.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       375.0
+      ]
+     ]
+    },
+    {
+     "site": "Bizim Tropikal",
+     "own": true,
+     "url": "https://bizimtropikal.com/products/mango-yerli",
+     "price": 355.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       355.0
+      ]
+     ]
+    },
+    {
+     "site": "Ailemin Avokadocusu",
+     "own": false,
+     "url": "https://aileminavokadocusu.com/urun/1-kilo-mango-2/",
+     "price": 350.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       350.0
+      ]
+     ]
+    },
+    {
+     "site": "Zahide'nin Bahçesi",
+     "own": false,
+     "url": "https://zahidenintropikalbahcesi.com/product/mango/",
+     "price": 250.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "False",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       250.0
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "key": "kamkat_kg",
+   "name": "Kamkat (kumkuat), 1 kg",
+   "unit": "kg",
+   "our": 230.0,
+   "cheapest": null,
+   "avg": null,
+   "rank": 1,
+   "n": 1,
+   "sites": [
+    {
+     "site": "Tropik Hasat",
+     "own": true,
+     "url": "https://tropikhasat.com/products/kamkatkumkuat",
+     "price": 240.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       240.0
+      ]
+     ]
+    },
+    {
+     "site": "Bizim Tropikal",
+     "own": true,
+     "url": "https://bizimtropikal.com/products/kamkat",
+     "price": 230.0,
+     "prev": null,
+     "change": null,
+     "in_stock": "",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       230.0
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "alerts": [
+  "Avokado, 1 kg: Zahide'nin Bahçesi bizden %37 ucuz (170 vs 270 ₺/kg)"
+ ],
+ "free_shipping": {
+  "Tropik Hasat": 1500,
+  "Bizim Tropikal": 1500,
+  "Avokadocu Ayşe": 1000,
+  "Ailemin Avokadocusu": 1200,
+  "Ejder Meyvesi": 1900,
+  "Çiftçilerden": 1500,
+  "GSR Tropik": 200,
+  "Zahide'nin Bahçesi": null
+ }
+}

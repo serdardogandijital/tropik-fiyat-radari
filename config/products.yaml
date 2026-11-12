@@ -1,0 +1,107 @@
+# Tropik Fiyat Radarı — takip listesi
+# Her ürün grubu ortak bir birime çevrilir: "adet" ya da "kg".
+#   qty      : linkteki paketin miktarı (birim cinsinden). 250 g -> 0.25 (kg)
+#   variant  : sayfada birden çok seçenek varsa eşleşecek metin (ör. "1 kg", "10 Adet")
+#   own: true: bizim sitemiz (Tropik Hasat / Bizim Tropikal)
+# Yeni rakip eklemek için ilgili ürünün altına bir satır kopyalamak yeterli.
+
+free_shipping:            # ücretsiz kargo eşikleri (₺) — elle güncellenir
+  Tropik Hasat: 1500
+  Bizim Tropikal: 1500
+  Avokadocu Ayşe: 1000
+  Ailemin Avokadocusu: 1200
+  Ejder Meyvesi: 1900
+  Çiftçilerden: 1500
+  GSR Tropik: 200
+  Zahide'nin Bahçesi: null
+
+products:
+  - key: fuerte_200_adet
+    name: Fuerte avokado (200 g+), 1 adet
+    unit: adet
+    offers:
+      - {site: Tropik Hasat, own: true, qty: 1, variant: "1 Adet", url: "https://tropikhasat.com/products/20-adet-fuerte-avokado250-gr-ustu"}
+      - {site: Bizim Tropikal, own: true, qty: 1, variant: "1 Adet", url: "https://bizimtropikal.com/products/fuerte-avokado-50-adet-250-gram-uzeri"}
+      - {site: Ejder Meyvesi, qty: 1, url: "https://ejdermeyvesi.com/1-adet-avokado-fuerte-200-250-gr-arasi"}
+
+  - key: fuerte_250_adet
+    name: Fuerte avokado (250 g+), 1 adet
+    unit: adet
+    offers:
+      - {site: Tropik Hasat, own: true, qty: 1, variant: "1 Adet", url: "https://tropikhasat.com/products/fuerte-avokado-jumbo-adetle"}
+      - {site: Avokadocu Ayşe, qty: 1, url: "https://www.avokadocuayse.com/urunlerimiz/buyuk-boy-fuerte-avokado/?attribute_pa_adet=1-adet"}
+      - {site: Ailemin Avokadocusu, qty: 1, url: "https://aileminavokadocusu.com/urun/1-adet-fuerte-avokado-100-tl-250-gr-ve-ustu/"}
+      - {site: Ejder Meyvesi, qty: 1, url: "https://ejdermeyvesi.com/1-adet-avokado-fuerte-250-300-gr-arasi"}
+
+  - key: fuerte_10_adet
+    name: Fuerte avokado, 10'lu paket (adet fiyatı)
+    unit: adet
+    offers:
+      - {site: Tropik Hasat, own: true, qty: 10, variant: "10 Adet", url: "https://tropikhasat.com/products/20-adet-fuerte-avokado250-gr-ustu"}
+      - {site: Bizim Tropikal, own: true, qty: 10, variant: "10 Adet", url: "https://bizimtropikal.com/products/fuerte-avokado-50-adet-250-gram-uzeri"}
+      - {site: Avokadocu Ayşe, qty: 10, url: "https://www.avokadocuayse.com/urunlerimiz/buyuk-boy-fuerte-avokado/?attribute_pa_adet=10-adet"}
+      - {site: Ailemin Avokadocusu, qty: 10, url: "https://aileminavokadocusu.com/urun/10-adet-fuerte-avokado-1000-tl-ucretsiz-kargo/"}
+      - {site: Ejder Meyvesi, qty: 10, url: "https://ejdermeyvesi.com/10-adet-avokado-fuerte"}
+
+  - key: avokado_kg
+    name: Avokado, 1 kg
+    unit: kg
+    offers:
+      - {site: Tropik Hasat, own: true, qty: 1, variant: "1 kg", url: "https://tropikhasat.com/products/50-adet-fuerte-avokado250-gr-ustu"}
+      - {site: Bizim Tropikal, own: true, qty: 1, variant: "1 kg", url: "https://bizimtropikal.com/products/fuerte-buyuk-boy-15-adet-250-gram-uzeri"}
+      - {site: Çiftçilerden, qty: 1, url: "https://ciftcilerden.com/alanya-avokado-1-kg"}
+      - {site: Ailemin Avokadocusu, qty: 1, url: "https://aileminavokadocusu.com/urun/1-kilo-avokado/"}
+      - {site: Zahide'nin Bahçesi, qty: 1, url: "https://zahidenintropikalbahcesi.com/product/fuerte-avokado-kg/"}
+
+  - key: baby_avokado
+    name: Baby / bebek avokado (kg fiyatı)
+    unit: kg
+    offers:
+      - {site: Tropik Hasat, own: true, qty: 1, variant: "1 kg", url: "https://tropikhasat.com/products/baby-avokado"}
+      - {site: Bizim Tropikal, own: true, qty: 1, variant: "1 kg", url: "https://bizimtropikal.com/products/baby-avokado"}
+      - {site: Ejder Meyvesi, qty: 0.5, url: "https://ejdermeyvesi.com/bebek-avokado"}
+
+  - key: bacon_adet
+    name: Bacon avokado, 1 adet
+    unit: adet
+    offers:
+      - {site: Tropik Hasat, own: true, qty: 1, variant: "1 Adet", url: "https://tropikhasat.com/products/bacon-avokado-1"}
+      - {site: Ejder Meyvesi, qty: 1, url: "https://ejdermeyvesi.com/1-adet-avokado-bacon"}
+
+  - key: ejder_kg
+    name: Ejder meyvesi, 1 kg
+    unit: kg
+    offers:
+      - {site: Tropik Hasat, own: true, qty: 1, variant: "1 kg", url: "https://tropikhasat.com/products/ejder-meyvesi-kucuk-boy"}
+      - {site: GSR Tropik, qty: 1, url: "https://gsrtropik.com/ejder-meyvesi--beyaz--1-kg-p-26"}
+
+  - key: papaya_kg
+    name: Papaya, 1 kg
+    unit: kg
+    offers:
+      - {site: Tropik Hasat, own: true, qty: 1, variant: "1 kg", url: "https://tropikhasat.com/products/papaya"}
+      - {site: GSR Tropik, qty: 1, url: "https://gsrtropik.com/papaya-1-kg-p-7"}
+
+  - key: longan_kg
+    name: Longan (kg fiyatına çevrilmiş)
+    unit: kg
+    offers:
+      - {site: Tropik Hasat, own: true, qty: 0.25, variant: "250", url: "https://tropikhasat.com/products/longan-1"}
+      - {site: Avokadocu Ayşe, qty: 0.25, url: "https://www.avokadocuayse.com/urunlerimiz/longan-ejderha-gozu-meyvesi-250-gr/"}
+      - {site: Ejder Meyvesi, qty: 0.125, url: "https://ejdermeyvesi.com/125-gr-longan-ejderha-gozu"}
+
+  - key: mango_kg
+    name: Yerli mango, 1 kg
+    unit: kg
+    offers:
+      - {site: Tropik Hasat, own: true, qty: 1, variant: "1 kg", url: "https://tropikhasat.com/products/yerli-mango"}
+      - {site: Bizim Tropikal, own: true, qty: 1, variant: "1 kg", url: "https://bizimtropikal.com/products/mango-yerli"}
+      - {site: Ailemin Avokadocusu, qty: 1, url: "https://aileminavokadocusu.com/urun/1-kilo-mango-2/"}
+      - {site: Zahide'nin Bahçesi, qty: 1, url: "https://zahidenintropikalbahcesi.com/product/mango/"}
+
+  - key: kamkat_kg
+    name: Kamkat (kumkuat), 1 kg
+    unit: kg
+    offers:
+      - {site: Tropik Hasat, own: true, qty: 1, variant: "1 kg", url: "https://tropikhasat.com/products/kamkatkumkuat"}
+      - {site: Bizim Tropikal, own: true, qty: 1, variant: "1 kg", url: "https://bizimtropikal.com/products/kamkat"}
