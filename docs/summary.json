@@ -6,10 +6,13 @@
    "name": "Fuerte avokado (200 g+), 1 adet",
    "unit": "adet",
    "our": 80.0,
-   "cheapest": null,
-   "avg": null,
-   "rank": 1,
-   "n": 1,
+   "cheapest": {
+    "site": "Ejder Meyvesi",
+    "price": 69.0
+   },
+   "avg": 69.0,
+   "rank": 2,
+   "n": 2,
    "sites": [
     {
      "site": "Tropik Hasat",
@@ -18,7 +21,7 @@
      "price": 80.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -34,7 +37,7 @@
      "price": 80.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -47,12 +50,17 @@
      "site": "Ejder Meyvesi",
      "own": false,
      "url": "https://ejdermeyvesi.com/1-adet-avokado-fuerte-200-250-gr-arasi",
-     "price": null,
+     "price": 69.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
-     "status": "ilk bot taramasında gelecek",
-     "series": []
+     "in_stock": "True",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       69.0
+      ]
+     ]
     }
    ]
   },
@@ -62,12 +70,12 @@
    "unit": "adet",
    "our": 90.0,
    "cheapest": {
-    "site": "Ailemin Avokadocusu",
-    "price": 100.0
+    "site": "Ejder Meyvesi",
+    "price": 89.0
    },
-   "avg": 110.0,
-   "rank": 1,
-   "n": 3,
+   "avg": 103.0,
+   "rank": 2,
+   "n": 4,
    "sites": [
     {
      "site": "Tropik Hasat",
@@ -76,7 +84,7 @@
      "price": 90.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -92,7 +100,7 @@
      "price": 120.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -108,7 +116,7 @@
      "price": 100.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -121,12 +129,17 @@
      "site": "Ejder Meyvesi",
      "own": false,
      "url": "https://ejdermeyvesi.com/1-adet-avokado-fuerte-250-300-gr-arasi",
-     "price": null,
+     "price": 89.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
-     "status": "ilk bot taramasında gelecek",
-     "series": []
+     "in_stock": "True",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       89.0
+      ]
+     ]
     }
    ]
   },
@@ -136,12 +149,12 @@
    "unit": "adet",
    "our": 74.0,
    "cheapest": {
-    "site": "Ailemin Avokadocusu",
-    "price": 100.0
+    "site": "Ejder Meyvesi",
+    "price": 67.5
    },
-   "avg": 107.5,
-   "rank": 1,
-   "n": 3,
+   "avg": 94.16666666666667,
+   "rank": 2,
+   "n": 4,
    "sites": [
     {
      "site": "Tropik Hasat",
@@ -150,7 +163,7 @@
      "price": 74.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -166,7 +179,7 @@
      "price": 76.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -182,7 +195,7 @@
      "price": 115.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -198,7 +211,7 @@
      "price": 100.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -211,12 +224,17 @@
      "site": "Ejder Meyvesi",
      "own": false,
      "url": "https://ejdermeyvesi.com/10-adet-avokado-fuerte",
-     "price": null,
+     "price": 67.5,
      "prev": null,
      "change": null,
-     "in_stock": "",
-     "status": "ilk bot taramasında gelecek",
-     "series": []
+     "in_stock": "True",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       67.5
+      ]
+     ]
     }
    ]
   },
@@ -226,12 +244,12 @@
    "unit": "kg",
    "our": 270.0,
    "cheapest": {
-    "site": "Zahide'nin Bahçesi",
-    "price": 170.0
+    "site": "Çiftçilerden",
+    "price": 349.0
    },
-   "avg": 299.6666666666667,
-   "rank": 2,
-   "n": 4,
+   "avg": 374.5,
+   "rank": 1,
+   "n": 3,
    "sites": [
     {
      "site": "Tropik Hasat",
@@ -240,7 +258,7 @@
      "price": 275.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -256,7 +274,7 @@
      "price": 270.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -269,7 +287,7 @@
      "site": "Çiftçilerden",
      "own": false,
      "url": "https://ciftcilerden.com/alanya-avokado-1-kg",
-     "price": 329.0,
+     "price": 349.0,
      "prev": null,
      "change": null,
      "in_stock": "True",
@@ -277,7 +295,7 @@
      "series": [
       [
        "2026-11-12",
-       329.0
+       349.0
       ]
      ]
     },
@@ -288,7 +306,7 @@
      "price": 400.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -304,7 +322,7 @@
      "price": 170.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "False",
      "status": "ok",
      "series": [
       [
@@ -320,10 +338,13 @@
    "name": "Baby / bebek avokado (kg fiyatı)",
    "unit": "kg",
    "our": 380.0,
-   "cheapest": null,
-   "avg": null,
+   "cheapest": {
+    "site": "Ejder Meyvesi",
+    "price": 458.0
+   },
+   "avg": 458.0,
    "rank": 1,
-   "n": 1,
+   "n": 2,
    "sites": [
     {
      "site": "Tropik Hasat",
@@ -332,7 +353,7 @@
      "price": 380.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -348,7 +369,7 @@
      "price": 380.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -361,12 +382,17 @@
      "site": "Ejder Meyvesi",
      "own": false,
      "url": "https://ejdermeyvesi.com/bebek-avokado",
-     "price": null,
+     "price": 458.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
-     "status": "ilk bot taramasında gelecek",
-     "series": []
+     "in_stock": "True",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       458.0
+      ]
+     ]
     }
    ]
   },
@@ -375,10 +401,13 @@
    "name": "Bacon avokado, 1 adet",
    "unit": "adet",
    "our": 85.0,
-   "cheapest": null,
-   "avg": null,
-   "rank": 1,
-   "n": 1,
+   "cheapest": {
+    "site": "Ejder Meyvesi",
+    "price": 65.0
+   },
+   "avg": 65.0,
+   "rank": 2,
+   "n": 2,
    "sites": [
     {
      "site": "Tropik Hasat",
@@ -387,7 +416,7 @@
      "price": 85.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -400,12 +429,17 @@
      "site": "Ejder Meyvesi",
      "own": false,
      "url": "https://ejdermeyvesi.com/1-adet-avokado-bacon",
-     "price": null,
+     "price": 65.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
-     "status": "ilk bot taramasında gelecek",
-     "series": []
+     "in_stock": "True",
+     "status": "ok",
+     "series": [
+      [
+       "2026-11-12",
+       65.0
+      ]
+     ]
     }
    ]
   },
@@ -429,7 +463,7 @@
      "price": 330.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -445,7 +479,7 @@
      "price": 400.0,
      "prev": null,
      "change": null,
-     "in_stock": "True",
+     "in_stock": "",
      "status": "ok",
      "series": [
       [
@@ -476,7 +510,7 @@
      "price": 190.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -492,7 +526,7 @@
      "price": 500.0,
      "prev": null,
      "change": null,
-     "in_stock": "True",
+     "in_stock": "",
      "status": "ok",
      "series": [
       [
@@ -508,10 +542,13 @@
    "name": "Longan (kg fiyatına çevrilmiş)",
    "unit": "kg",
    "our": 1780.0,
-   "cheapest": null,
-   "avg": null,
+   "cheapest": {
+    "site": "Avokadocu Ayşe",
+    "price": 1800.0
+   },
+   "avg": 1800.0,
    "rank": 1,
-   "n": 1,
+   "n": 2,
    "sites": [
     {
      "site": "Tropik Hasat",
@@ -520,7 +557,7 @@
      "price": 1780.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -533,15 +570,15 @@
      "site": "Avokadocu Ayşe",
      "own": false,
      "url": "https://www.avokadocuayse.com/urunlerimiz/longan-ejderha-gozu-meyvesi-250-gr/",
-     "price": 800.0,
+     "price": 1800.0,
      "prev": null,
      "change": null,
-     "in_stock": "False",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
        "2026-11-12",
-       800.0
+       1800.0
       ]
      ]
     },
@@ -583,7 +620,7 @@
      "price": 375.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -599,7 +636,7 @@
      "price": 355.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -615,7 +652,7 @@
      "price": 350.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -659,7 +696,7 @@
      "price": 240.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -675,7 +712,7 @@
      "price": 230.0,
      "prev": null,
      "change": null,
-     "in_stock": "",
+     "in_stock": "True",
      "status": "ok",
      "series": [
       [
@@ -688,7 +725,9 @@
   }
  ],
  "alerts": [
-  "Avokado, 1 kg: Zahide'nin Bahçesi bizden %37 ucuz (170 vs 270 ₺/kg)"
+  "Fuerte avokado (200 g+), 1 adet: Ejder Meyvesi bizden %14 ucuz (69 vs 80 ₺/adet)",
+  "Fuerte avokado, 10'lu paket (adet fiyatı): Ejder Meyvesi bizden %9 ucuz (68 vs 74 ₺/adet)",
+  "Bacon avokado, 1 adet: Ejder Meyvesi bizden %24 ucuz (65 vs 85 ₺/adet)"
  ],
  "free_shipping": {
   "Tropik Hasat": 1500,

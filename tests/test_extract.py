@@ -47,3 +47,24 @@ def test_html_fallback():
 def test_meta():
     h = '<meta property="product:price:amount" content="329.00">'
     assert extract_price(h, "u").price == 329
+
+# --- canlı sitelerden görülen yapılar (12.11.2026) ---
+def test_woo_stock_label_overrides_jsonld():  # Zahide: JSON-LD InStock ama sayfa "tükendi"
+    h = ('<script type="application/ld+json">{"@type":"Product","offers":{"@type":"Offer","price":"170.00","availability":"https://schema.org/InStock"}}</script>'
+         '<p class="stock out-of-stock">Stokta yok</p>')
+    r = extract_price(h, "u"); assert r.price == 170 and r.in_stock is False
+
+def test_skip_cart_total():  # GSR: önce sepet 0.00 ₺, sonra ürün fiyatı
+    h = '<span class="cart-total-price">0.00 ₺</span><div class="price-box">500.00 ₺</div>'
+    assert extract_price(h, "u").price == 500
+
+def test_woo_simple_meta_vs_widgets():  # Avokadocu Ayşe: meta doğru, sayfada başka fiyat kutuları var
+    h = ('<meta property="product:price:amount" content="450.00">'
+         '<div class="summary"><span class="price">360,00 ₺</span><p class="price">450,00 ₺</p></div>')
+    assert extract_price(h, "u").price == 450
+
+def test_tropikhasat_variants():
+    data = {"@type":"Product","offers":[{"@type":"Offer","name":"1 Kg","price":"190.00"},{"@type":"Offer","name":"1.5 Kg","price":"280.00"},{"@type":"Offer","name":"2 Kg","price":"370.00"}]}
+    h = f'<script type="application/ld+json">[{json.dumps(data)}]</script>'
+    assert extract_price(h, "u", "1 kg").price == 190
+    assert extract_price(h, "u", "250").price is None

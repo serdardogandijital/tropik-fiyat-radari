@@ -198,19 +198,34 @@ def _from_meta(soup: BeautifulSoup) -> PriceResult | None:
 
 _PRICE_RE = re.compile(r"(\d{1,3}(?:[.\s]\d{3})*(?:,\d{1,2})?|\d+(?:[.,]\d{1,2})?)\s*(?:₺|TL)", re.I)
 _PRICE_RE2 = re.compile(r"₺\s*(\d{1,3}(?:\.\d{3})*(?:,\d{1,2})?|\d+(?:[.,]\d{1,2})?)")
+# Önce ürünün kendi fiyat kutusu (WooCommerce vb.), sonra genel "price" sınıfları.
+_PRICE_SELECTORS = ["p.price ins", "p.price", ".summary .price", ".product-price", ".price-box",
+                    '[class*="price" i] ins', '[class*="price" i]', '[id*="price" i]']
 
 
 def _from_html(soup: BeautifulSoup) -> PriceResult | None:
-    candidates = soup.select('[class*="price" i] ins, [class*="price" i], [id*="price" i]')
-    for el in candidates:
-        text = el.get_text(" ", strip=True)
-        m = _PRICE_RE.search(text) or _PRICE_RE2.search(text)
-        if m:
-            p = parse_price(m.group(1))
-            if p:
-                page = _norm(soup.get_text(" ", strip=True))
-                stock = False if ("tükendi" in page or "stokta yok" in page) else None
-                return PriceResult(p, stock, "html")
+    for sel in _PRICE_SELECTORS:
+        for el in soup.select(sel):
+            cls = " ".join(el.get("class", [])).lower()
+            if "cart" in cls or "sepet" in cls or el.find_parent(class_=re.compile("cart|minicart|related|upsell", re.I)):
+                continue  # sepet tutarı / benzer ürün fiyatı
+            text = el.get_text(" ", strip=True)
+            m = _PRICE_RE.search(text) or _PRICE_RE2.search(text)
+            if m and parse_price(m.group(1)):
+                return PriceResult(parse_price(m.group(1)), None, "html")
+    return None
+
+
+def _page_stock(soup: BeautifulSoup) -> bool | None:
+    """Sayfadaki görünür stok etiketi (WooCommerce p.stock). JSON-LD'den daha güvenilir."""
+    el = soup.select_one("p.stock, .summary .stock, .product-stock")
+    if not el:
+        return None
+    cls = " ".join(el.get("class", [])).lower()
+    if "out-of-stock" in cls or re.search(r"tükendi|stokta yok", el.get_text(" ", strip=True), re.I):
+        return False
+    if "in-stock" in cls:
+        return True
     return None
 
 
@@ -223,5 +238,8 @@ def extract_price(html: str, url: str, variant: str | None = None) -> PriceResul
                lambda: None if variant else _from_html(soup)):
         res = fn()
         if res and res.price:
+            stock = _page_stock(soup)
+            if stock is False or (stock is True and res.in_stock is None):
+                res.in_stock = stock
             return res
     return PriceResult(None, None, "none", "fiyat bulunamadı")

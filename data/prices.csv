@@ -1,36 +1,36 @@
 date,product_key,product_name,unit,site,own,url,price,qty,unit_price,in_stock,method,status
-2026-11-12,fuerte_200_adet,"Fuerte avokado (200 g+), 1 adet",adet,Tropik Hasat,True,https://tropikhasat.com/products/20-adet-fuerte-avokado250-gr-ustu,80,1,80.0,,manuel-ilk-olcum,ok
-2026-11-12,fuerte_200_adet,"Fuerte avokado (200 g+), 1 adet",adet,Bizim Tropikal,True,https://bizimtropikal.com/products/fuerte-avokado-50-adet-250-gram-uzeri,80,1,80.0,,manuel-ilk-olcum,ok
-2026-11-12,fuerte_200_adet,"Fuerte avokado (200 g+), 1 adet",adet,Ejder Meyvesi,False,https://ejdermeyvesi.com/1-adet-avokado-fuerte-200-250-gr-arasi,,1,,,manuel-ilk-olcum,ilk bot taramasında gelecek
-2026-11-12,fuerte_250_adet,"Fuerte avokado (250 g+), 1 adet",adet,Tropik Hasat,True,https://tropikhasat.com/products/fuerte-avokado-jumbo-adetle,90,1,90.0,,manuel-ilk-olcum,ok
-2026-11-12,fuerte_250_adet,"Fuerte avokado (250 g+), 1 adet",adet,Avokadocu Ayşe,False,https://www.avokadocuayse.com/urunlerimiz/buyuk-boy-fuerte-avokado/?attribute_pa_adet=1-adet,120,1,120.0,,manuel-ilk-olcum,ok
-2026-11-12,fuerte_250_adet,"Fuerte avokado (250 g+), 1 adet",adet,Ailemin Avokadocusu,False,https://aileminavokadocusu.com/urun/1-adet-fuerte-avokado-100-tl-250-gr-ve-ustu/,100,1,100.0,,manuel-ilk-olcum,ok
-2026-11-12,fuerte_250_adet,"Fuerte avokado (250 g+), 1 adet",adet,Ejder Meyvesi,False,https://ejdermeyvesi.com/1-adet-avokado-fuerte-250-300-gr-arasi,,1,,,manuel-ilk-olcum,ilk bot taramasında gelecek
-2026-11-12,fuerte_10_adet,"Fuerte avokado, 10'lu paket (adet fiyatı)",adet,Tropik Hasat,True,https://tropikhasat.com/products/20-adet-fuerte-avokado250-gr-ustu,740,10,74.0,,manuel-ilk-olcum,ok
-2026-11-12,fuerte_10_adet,"Fuerte avokado, 10'lu paket (adet fiyatı)",adet,Bizim Tropikal,True,https://bizimtropikal.com/products/fuerte-avokado-50-adet-250-gram-uzeri,760,10,76.0,,manuel-ilk-olcum,ok
-2026-11-12,fuerte_10_adet,"Fuerte avokado, 10'lu paket (adet fiyatı)",adet,Avokadocu Ayşe,False,https://www.avokadocuayse.com/urunlerimiz/buyuk-boy-fuerte-avokado/?attribute_pa_adet=10-adet,1150,10,115.0,,manuel-ilk-olcum,ok
-2026-11-12,fuerte_10_adet,"Fuerte avokado, 10'lu paket (adet fiyatı)",adet,Ailemin Avokadocusu,False,https://aileminavokadocusu.com/urun/10-adet-fuerte-avokado-1000-tl-ucretsiz-kargo/,1000,10,100.0,,manuel-ilk-olcum,ok
-2026-11-12,fuerte_10_adet,"Fuerte avokado, 10'lu paket (adet fiyatı)",adet,Ejder Meyvesi,False,https://ejdermeyvesi.com/10-adet-avokado-fuerte,,10,,,manuel-ilk-olcum,ilk bot taramasında gelecek
-2026-11-12,avokado_kg,"Avokado, 1 kg",kg,Tropik Hasat,True,https://tropikhasat.com/products/50-adet-fuerte-avokado250-gr-ustu,275,1,275.0,,manuel-ilk-olcum,ok
-2026-11-12,avokado_kg,"Avokado, 1 kg",kg,Bizim Tropikal,True,https://bizimtropikal.com/products/fuerte-buyuk-boy-15-adet-250-gram-uzeri,270,1,270.0,,manuel-ilk-olcum,ok
-2026-11-12,avokado_kg,"Avokado, 1 kg",kg,Çiftçilerden,False,https://ciftcilerden.com/alanya-avokado-1-kg,329,1,329.0,True,manuel-ilk-olcum,ok
-2026-11-12,avokado_kg,"Avokado, 1 kg",kg,Ailemin Avokadocusu,False,https://aileminavokadocusu.com/urun/1-kilo-avokado/,400,1,400.0,,manuel-ilk-olcum,ok
-2026-11-12,avokado_kg,"Avokado, 1 kg",kg,Zahide'nin Bahçesi,False,https://zahidenintropikalbahcesi.com/product/fuerte-avokado-kg/,170,1,170.0,,manuel-ilk-olcum,ok
-2026-11-12,baby_avokado,Baby / bebek avokado (kg fiyatı),kg,Tropik Hasat,True,https://tropikhasat.com/products/baby-avokado,380,1,380.0,,manuel-ilk-olcum,ok
-2026-11-12,baby_avokado,Baby / bebek avokado (kg fiyatı),kg,Bizim Tropikal,True,https://bizimtropikal.com/products/baby-avokado,380,1,380.0,,manuel-ilk-olcum,ok
-2026-11-12,baby_avokado,Baby / bebek avokado (kg fiyatı),kg,Ejder Meyvesi,False,https://ejdermeyvesi.com/bebek-avokado,,0.5,,,manuel-ilk-olcum,ilk bot taramasında gelecek
-2026-11-12,bacon_adet,"Bacon avokado, 1 adet",adet,Tropik Hasat,True,https://tropikhasat.com/products/bacon-avokado-1,85,1,85.0,,manuel-ilk-olcum,ok
-2026-11-12,bacon_adet,"Bacon avokado, 1 adet",adet,Ejder Meyvesi,False,https://ejdermeyvesi.com/1-adet-avokado-bacon,,1,,,manuel-ilk-olcum,ilk bot taramasında gelecek
-2026-11-12,ejder_kg,"Ejder meyvesi, 1 kg",kg,Tropik Hasat,True,https://tropikhasat.com/products/ejder-meyvesi-kucuk-boy,330,1,330.0,,manuel-ilk-olcum,ok
-2026-11-12,ejder_kg,"Ejder meyvesi, 1 kg",kg,GSR Tropik,False,https://gsrtropik.com/ejder-meyvesi--beyaz--1-kg-p-26,400,1,400.0,True,manuel-ilk-olcum,ok
-2026-11-12,papaya_kg,"Papaya, 1 kg",kg,Tropik Hasat,True,https://tropikhasat.com/products/papaya,190,1,190.0,,manuel-ilk-olcum,ok
-2026-11-12,papaya_kg,"Papaya, 1 kg",kg,GSR Tropik,False,https://gsrtropik.com/papaya-1-kg-p-7,500,1,500.0,True,manuel-ilk-olcum,ok
-2026-11-12,longan_kg,Longan (kg fiyatına çevrilmiş),kg,Tropik Hasat,True,https://tropikhasat.com/products/longan-1,445,0.25,1780.0,,manuel-ilk-olcum,ok
-2026-11-12,longan_kg,Longan (kg fiyatına çevrilmiş),kg,Avokadocu Ayşe,False,https://www.avokadocuayse.com/urunlerimiz/longan-ejderha-gozu-meyvesi-250-gr/,200,0.25,800.0,False,manuel-ilk-olcum,ok
-2026-11-12,longan_kg,Longan (kg fiyatına çevrilmiş),kg,Ejder Meyvesi,False,https://ejdermeyvesi.com/125-gr-longan-ejderha-gozu,199,0.125,1592.0,False,manuel-ilk-olcum,ok
-2026-11-12,mango_kg,"Yerli mango, 1 kg",kg,Tropik Hasat,True,https://tropikhasat.com/products/yerli-mango,375,1,375.0,,manuel-ilk-olcum,ok
-2026-11-12,mango_kg,"Yerli mango, 1 kg",kg,Bizim Tropikal,True,https://bizimtropikal.com/products/mango-yerli,355,1,355.0,,manuel-ilk-olcum,ok
-2026-11-12,mango_kg,"Yerli mango, 1 kg",kg,Ailemin Avokadocusu,False,https://aileminavokadocusu.com/urun/1-kilo-mango-2/,350,1,350.0,,manuel-ilk-olcum,ok
-2026-11-12,mango_kg,"Yerli mango, 1 kg",kg,Zahide'nin Bahçesi,False,https://zahidenintropikalbahcesi.com/product/mango/,250,1,250.0,False,manuel-ilk-olcum,ok
-2026-11-12,kamkat_kg,"Kamkat (kumkuat), 1 kg",kg,Tropik Hasat,True,https://tropikhasat.com/products/kamkatkumkuat,240,1,240.0,,manuel-ilk-olcum,ok
-2026-11-12,kamkat_kg,"Kamkat (kumkuat), 1 kg",kg,Bizim Tropikal,True,https://bizimtropikal.com/products/kamkat,230,1,230.0,,manuel-ilk-olcum,ok
+2026-11-12,fuerte_200_adet,"Fuerte avokado (200 g+), 1 adet",adet,Tropik Hasat,True,https://tropikhasat.com/products/20-adet-fuerte-avokado250-gr-ustu,80,1,80.0,True,canli-tarayici,ok
+2026-11-12,fuerte_200_adet,"Fuerte avokado (200 g+), 1 adet",adet,Bizim Tropikal,True,https://bizimtropikal.com/products/fuerte-avokado-50-adet-250-gram-uzeri,80,1,80.0,True,canli-tarayici,ok
+2026-11-12,fuerte_200_adet,"Fuerte avokado (200 g+), 1 adet",adet,Ejder Meyvesi,False,https://ejdermeyvesi.com/1-adet-avokado-fuerte-200-250-gr-arasi,69,1,69.0,True,canli-tarayici,ok
+2026-11-12,fuerte_250_adet,"Fuerte avokado (250 g+), 1 adet",adet,Tropik Hasat,True,https://tropikhasat.com/products/fuerte-avokado-jumbo-adetle,90,1,90.0,True,canli-tarayici,ok
+2026-11-12,fuerte_250_adet,"Fuerte avokado (250 g+), 1 adet",adet,Avokadocu Ayşe,False,https://www.avokadocuayse.com/urunlerimiz/buyuk-boy-fuerte-avokado/?attribute_pa_adet=1-adet,120,1,120.0,True,canli-tarayici,ok
+2026-11-12,fuerte_250_adet,"Fuerte avokado (250 g+), 1 adet",adet,Ailemin Avokadocusu,False,https://aileminavokadocusu.com/urun/1-adet-fuerte-avokado-100-tl-250-gr-ve-ustu/,100,1,100.0,True,canli-tarayici,ok
+2026-11-12,fuerte_250_adet,"Fuerte avokado (250 g+), 1 adet",adet,Ejder Meyvesi,False,https://ejdermeyvesi.com/1-adet-avokado-fuerte-250-300-gr-arasi,89,1,89.0,True,canli-tarayici,ok
+2026-11-12,fuerte_10_adet,"Fuerte avokado, 10'lu paket (adet fiyatı)",adet,Tropik Hasat,True,https://tropikhasat.com/products/20-adet-fuerte-avokado250-gr-ustu,740,10,74.0,True,canli-tarayici,ok
+2026-11-12,fuerte_10_adet,"Fuerte avokado, 10'lu paket (adet fiyatı)",adet,Bizim Tropikal,True,https://bizimtropikal.com/products/fuerte-avokado-50-adet-250-gram-uzeri,760,10,76.0,True,canli-tarayici,ok
+2026-11-12,fuerte_10_adet,"Fuerte avokado, 10'lu paket (adet fiyatı)",adet,Avokadocu Ayşe,False,https://www.avokadocuayse.com/urunlerimiz/buyuk-boy-fuerte-avokado/?attribute_pa_adet=10-adet,1150,10,115.0,True,canli-tarayici,ok
+2026-11-12,fuerte_10_adet,"Fuerte avokado, 10'lu paket (adet fiyatı)",adet,Ailemin Avokadocusu,False,https://aileminavokadocusu.com/urun/10-adet-fuerte-avokado-1000-tl-ucretsiz-kargo/,1000,10,100.0,True,canli-tarayici,ok
+2026-11-12,fuerte_10_adet,"Fuerte avokado, 10'lu paket (adet fiyatı)",adet,Ejder Meyvesi,False,https://ejdermeyvesi.com/10-adet-avokado-fuerte,675,10,67.5,True,canli-tarayici,ok
+2026-11-12,avokado_kg,"Avokado, 1 kg",kg,Tropik Hasat,True,https://tropikhasat.com/products/50-adet-fuerte-avokado250-gr-ustu,275,1,275.0,True,canli-tarayici,ok
+2026-11-12,avokado_kg,"Avokado, 1 kg",kg,Bizim Tropikal,True,https://bizimtropikal.com/products/fuerte-buyuk-boy-15-adet-250-gram-uzeri,270,1,270.0,True,canli-tarayici,ok
+2026-11-12,avokado_kg,"Avokado, 1 kg",kg,Çiftçilerden,False,https://ciftcilerden.com/alanya-avokado-1-kg,349,1,349.0,True,canli-tarayici,ok
+2026-11-12,avokado_kg,"Avokado, 1 kg",kg,Ailemin Avokadocusu,False,https://aileminavokadocusu.com/urun/1-kilo-avokado/,400,1,400.0,True,canli-tarayici,ok
+2026-11-12,avokado_kg,"Avokado, 1 kg",kg,Zahide'nin Bahçesi,False,https://zahidenintropikalbahcesi.com/product/fuerte-avokado-kg/,170,1,170.0,False,canli-tarayici,ok
+2026-11-12,baby_avokado,Baby / bebek avokado (kg fiyatı),kg,Tropik Hasat,True,https://tropikhasat.com/products/baby-avokado,380,1,380.0,True,canli-tarayici,ok
+2026-11-12,baby_avokado,Baby / bebek avokado (kg fiyatı),kg,Bizim Tropikal,True,https://bizimtropikal.com/products/baby-avokado,380,1,380.0,True,canli-tarayici,ok
+2026-11-12,baby_avokado,Baby / bebek avokado (kg fiyatı),kg,Ejder Meyvesi,False,https://ejdermeyvesi.com/bebek-avokado,229,0.5,458.0,True,canli-tarayici,ok
+2026-11-12,bacon_adet,"Bacon avokado, 1 adet",adet,Tropik Hasat,True,https://tropikhasat.com/products/bacon-avokado-1,85,1,85.0,True,canli-tarayici,ok
+2026-11-12,bacon_adet,"Bacon avokado, 1 adet",adet,Ejder Meyvesi,False,https://ejdermeyvesi.com/1-adet-avokado-bacon,65,1,65.0,True,canli-tarayici,ok
+2026-11-12,ejder_kg,"Ejder meyvesi, 1 kg",kg,Tropik Hasat,True,https://tropikhasat.com/products/ejder-meyvesi-kucuk-boy,330,1,330.0,True,canli-tarayici,ok
+2026-11-12,ejder_kg,"Ejder meyvesi, 1 kg",kg,GSR Tropik,False,https://gsrtropik.com/ejder-meyvesi--beyaz--1-kg-p-26,400,1,400.0,,canli-tarayici,ok
+2026-11-12,papaya_kg,"Papaya, 1 kg",kg,Tropik Hasat,True,https://tropikhasat.com/products/papaya,190,1,190.0,True,canli-tarayici,ok
+2026-11-12,papaya_kg,"Papaya, 1 kg",kg,GSR Tropik,False,https://gsrtropik.com/papaya-1-kg-p-7,500,1,500.0,,canli-tarayici,ok
+2026-11-12,longan_kg,Longan (kg fiyatına çevrilmiş),kg,Tropik Hasat,True,https://tropikhasat.com/products/longan-1,445,0.25,1780.0,True,canli-tarayici,ok
+2026-11-12,longan_kg,Longan (kg fiyatına çevrilmiş),kg,Avokadocu Ayşe,False,https://www.avokadocuayse.com/urunlerimiz/longan-ejderha-gozu-meyvesi-250-gr/,450,0.25,1800.0,True,canli-tarayici,ok
+2026-11-12,longan_kg,Longan (kg fiyatına çevrilmiş),kg,Ejder Meyvesi,False,https://ejdermeyvesi.com/125-gr-longan-ejderha-gozu,199,0.125,1592.0,False,canli-tarayici,ok
+2026-11-12,mango_kg,"Yerli mango, 1 kg",kg,Tropik Hasat,True,https://tropikhasat.com/products/yerli-mango,375,1,375.0,True,canli-tarayici,ok
+2026-11-12,mango_kg,"Yerli mango, 1 kg",kg,Bizim Tropikal,True,https://bizimtropikal.com/products/mango-yerli,355,1,355.0,True,canli-tarayici,ok
+2026-11-12,mango_kg,"Yerli mango, 1 kg",kg,Ailemin Avokadocusu,False,https://aileminavokadocusu.com/urun/1-kilo-mango-2/,350,1,350.0,True,canli-tarayici,ok
+2026-11-12,mango_kg,"Yerli mango, 1 kg",kg,Zahide'nin Bahçesi,False,https://zahidenintropikalbahcesi.com/product/mango/,250,1,250.0,False,canli-tarayici,ok
+2026-11-12,kamkat_kg,"Kamkat (kumkuat), 1 kg",kg,Tropik Hasat,True,https://tropikhasat.com/products/kamkatkumkuat,240,1,240.0,True,canli-tarayici,ok
+2026-11-12,kamkat_kg,"Kamkat (kumkuat), 1 kg",kg,Bizim Tropikal,True,https://bizimtropikal.com/products/kamkat,230,1,230.0,True,canli-tarayici,ok
