@@ -58,12 +58,14 @@ def summarize() -> dict:
         own = [s["price"] for s in sites if s["own"] and s["price"]]
         comp = [s for s in sites if not s["own"] and s["price"] and str(s["in_stock"]) != "False"]  # tükenenler sayılmaz
         our = min(own) if own else None
+        our_url = next((st["url"] for st in sites if st["own"] and st["price"] == our), None)
         cheapest = min(comp, key=lambda s: s["price"]) if comp else None
         avg = sum(s["price"] for s in comp) / len(comp) if comp else None
         rank = 1 + sum(1 for s in comp if our and s["price"] < our) if our else None
         show = prod.get("show") or {"qty": 1, "label": "1 " + prod["unit"]}
         out["products"].append({"key": prod["key"], "name": prod["name"], "unit": prod["unit"], "show": show,
-                                "our": our, "cheapest": cheapest and {"site": cheapest["site"], "price": cheapest["price"]},
+                                "our": our, "cheapest": cheapest and {"site": cheapest["site"], "price": cheapest["price"], "url": cheapest["url"]},
+                                "our_url": our_url,
                                 "avg": avg, "rank": rank, "n": len(comp) + (1 if our else 0), "sites": sites})
         for s in sites:
             if s["change"] is not None and abs(s["change"]) >= 3:
@@ -82,37 +84,44 @@ def _tl(x: float) -> str:
     return f"{x:,.0f} ₺".replace(",", ".")
 
 
+def _a(text: str, url: str | None) -> str:
+    t = html.escape(text, quote=False)
+    return f'<a href="{html.escape(url, quote=True)}">{t}</a>' if url else t
+
+
 def telegram_text(s: dict, panel_url: str = "") -> str:
     y, m, d = (s["date"] or "0000-00-00").split("-")
-    lines = [f"🍈 Tropik Fiyat Radarı — {int(d)} {_AYLAR[int(m)]}", ""]
+    lines = [f"🍈 <b>Tropik Fiyat Radarı — {int(d)} {_AYLAR[int(m)]}</b>", ""]
     pahali, ucuz, degisen = [], [], []
     for p in s["products"]:
         q, lbl = p["show"]["qty"], p["show"]["label"]
-        title = p["name"]
+        title = html.escape(p["name"], quote=False)
+        biz_l = _a("Biz", p.get("our_url"))
+        rk = p["cheapest"] and _a(p["cheapest"]["site"], p["cheapest"]["url"])
         if p["our"] and p["cheapest"]:
             biz, rakip = p["our"] * q, p["cheapest"]["price"] * q
             if rakip < biz:
-                pahali.append(f"▪️ {title}\n   Biz: {_tl(biz)} · {p['cheapest']['site']}: {_tl(rakip)}  ({_tl(biz - rakip)} ucuz)")
+                pahali.append(f"▪️ <b>{title}</b>\n   {biz_l}: {_tl(biz)} · {rk}: {_tl(rakip)}  ({_tl(biz - rakip)} ucuz)")
             else:
                 fark = f"{_tl(rakip - biz)} pahalı" if rakip > biz else "aynı fiyat"
-                ucuz.append(f"{title}\n   Biz: {_tl(biz)} · En yakın: {p['cheapest']['site']} {_tl(rakip)}  ({fark})")
+                ucuz.append(f"<b>{title}</b>\n   {biz_l}: {_tl(biz)} · En yakın: {rk} {_tl(rakip)}  ({fark})")
         for st in p["sites"]:
             if st["change"] is not None and abs(st["change"]) >= 3:
                 yon = "zam 📈" if st["change"] > 0 else "indirim 📉"
-                kim = "Biz" if st["own"] else st["site"]
+                kim = _a("Biz" if st["own"] else st["site"], st["url"])
                 degisen.append(f"▪️ {kim} — {title}: {_tl(st['prev'] * q)} → {_tl(st['price'] * q)} ({yon})")
     if pahali:
-        lines.append(f"🔴 Rakip bizden UCUZ ({len(pahali)} ürün):")
+        lines.append(f"🔴 <b>Rakip bizden UCUZ ({len(pahali)} ürün):</b>")
         lines += pahali + [""]
     if ucuz:
-        lines.append(f"🟢 En ucuz BİZİZ ({len(ucuz)} ürün):")
+        lines.append(f"🟢 <b>En ucuz BİZİZ ({len(ucuz)} ürün):</b>")
         lines += [f"▪️ {n}" for n in ucuz]
         lines.append("")
-    lines.append("🔄 Dünden bugüne fiyat değişimi:")
+    lines.append("🔄 <b>Dünden bugüne fiyat değişimi:</b>")
     lines += degisen or ["Değişiklik yok."]
-    lines.append("\nNot: 'Biz' = iki sitemizden (Tropik Hasat / Bizim Tropikal) ucuz olanı. Stokta olmayan rakipler sayılmaz.")
+    lines.append("\n<i>'Biz' ya da rakip adına tıklayınca ürün sayfası açılır.</i>\nNot: 'Biz' = iki sitemizden (Tropik Hasat / Bizim Tropikal) ucuz olanı. Stokta olmayan rakipler sayılmaz.")
     if panel_url:
-        lines.append(f"Detaylı tablo: {panel_url}")
+        lines.append(_a("Detaylı tablo", panel_url))
     return "\n".join(lines)
 
 
@@ -121,8 +130,11 @@ def send_telegram(text: str) -> None:
     if not token or not chat:
         print("Telegram ayarı yok, mesaj gönderilmedi.\n" + text)
         return
-    requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
-                  data={"chat_id": chat, "text": text, "disable_web_page_preview": True}, timeout=20)
+    r = requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
+                  data={"chat_id": chat, "text": text, "parse_mode": "HTML", "disable_web_page_preview": True}, timeout=20)
+    if not r.ok:
+        print("Telegram hatası:", r.status_code, r.text[:200])
+    r.raise_for_status()
 
 
 def _spark(series) -> str:
