@@ -91,10 +91,11 @@ def telegram_text(s: dict, panel_url: str = "") -> str:
         title = p["name"]
         if p["our"] and p["cheapest"]:
             biz, rakip = p["our"] * q, p["cheapest"]["price"] * q
-            if rakip < biz * 0.98:
+            if rakip < biz:
                 pahali.append(f"▪️ {title}\n   Biz: {_tl(biz)} · {p['cheapest']['site']}: {_tl(rakip)}  ({_tl(biz - rakip)} ucuz)")
             else:
-                ucuz.append(p["name"])
+                fark = f"{_tl(rakip - biz)} pahalı" if rakip > biz else "aynı fiyat"
+                ucuz.append(f"{title}\n   Biz: {_tl(biz)} · En yakın: {p['cheapest']['site']} {_tl(rakip)}  ({fark})")
         for st in p["sites"]:
             if st["change"] is not None and abs(st["change"]) >= 3:
                 yon = "zam 📈" if st["change"] > 0 else "indirim 📉"
@@ -109,7 +110,7 @@ def telegram_text(s: dict, panel_url: str = "") -> str:
         lines.append("")
     lines.append("🔄 Dünden bugüne fiyat değişimi:")
     lines += degisen or ["Değişiklik yok."]
-    lines.append("\nNot: Stokta olmayan rakip ürünler hesaba katılmaz.")
+    lines.append("\nNot: 'Biz' = iki sitemizden (Tropik Hasat / Bizim Tropikal) ucuz olanı. Stokta olmayan rakipler sayılmaz.")
     if panel_url:
         lines.append(f"Detaylı tablo: {panel_url}")
     return "\n".join(lines)
