@@ -61,7 +61,8 @@ def summarize() -> dict:
         cheapest = min(comp, key=lambda s: s["price"]) if comp else None
         avg = sum(s["price"] for s in comp) / len(comp) if comp else None
         rank = 1 + sum(1 for s in comp if our and s["price"] < our) if our else None
-        out["products"].append({"key": prod["key"], "name": prod["name"], "unit": prod["unit"],
+        show = prod.get("show") or {"qty": 1, "label": "1 " + prod["unit"]}
+        out["products"].append({"key": prod["key"], "name": prod["name"], "unit": prod["unit"], "show": show,
                                 "our": our, "cheapest": cheapest and {"site": cheapest["site"], "price": cheapest["price"]},
                                 "avg": avg, "rank": rank, "n": len(comp) + (1 if our else 0), "sites": sites})
         for s in sites:
@@ -74,18 +75,43 @@ def summarize() -> dict:
     return out
 
 
+_AYLAR = ["", "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"]
+
+
+def _tl(x: float) -> str:
+    return f"{x:,.0f} ₺".replace(",", ".")
+
+
 def telegram_text(s: dict, panel_url: str = "") -> str:
-    lines = [f"🍈 Tropik Fiyat Radarı — {s['date']}"]
-    if s["alerts"]:
-        lines.append("\nDikkat:")
-        lines += [f"• {a}" for a in s["alerts"][:15]]
-    else:
-        lines.append("\nBugün kayda değer fiyat değişikliği yok.")
-    pos = [p for p in s["products"] if p["rank"] and p["n"] > 1]
-    cheap = sum(1 for p in pos if p["rank"] == 1)
-    lines.append(f"\nRakibi olan {len(pos)} üründen {cheap} tanesinde en ucuz biziz.")
+    y, m, d = (s["date"] or "0000-00-00").split("-")
+    lines = [f"🍈 Tropik Fiyat Radarı — {int(d)} {_AYLAR[int(m)]}", ""]
+    pahali, ucuz, degisen = [], [], []
+    for p in s["products"]:
+        q, lbl = p["show"]["qty"], p["show"]["label"]
+        title = p["name"]
+        if p["our"] and p["cheapest"]:
+            biz, rakip = p["our"] * q, p["cheapest"]["price"] * q
+            if rakip < biz * 0.98:
+                pahali.append(f"▪️ {title}\n   Biz: {_tl(biz)} · {p['cheapest']['site']}: {_tl(rakip)}  ({_tl(biz - rakip)} ucuz)")
+            else:
+                ucuz.append(p["name"])
+        for st in p["sites"]:
+            if st["change"] is not None and abs(st["change"]) >= 3:
+                yon = "zam 📈" if st["change"] > 0 else "indirim 📉"
+                kim = "Biz" if st["own"] else st["site"]
+                degisen.append(f"▪️ {kim} — {title}: {_tl(st['prev'] * q)} → {_tl(st['price'] * q)} ({yon})")
+    if pahali:
+        lines.append(f"🔴 Rakip bizden UCUZ ({len(pahali)} ürün):")
+        lines += pahali + [""]
+    if ucuz:
+        lines.append(f"🟢 En ucuz BİZİZ ({len(ucuz)} ürün):")
+        lines += [f"▪️ {n}" for n in ucuz]
+        lines.append("")
+    lines.append("🔄 Dünden bugüne fiyat değişimi:")
+    lines += degisen or ["Değişiklik yok."]
+    lines.append("\nNot: Stokta olmayan rakip ürünler hesaba katılmaz.")
     if panel_url:
-        lines.append(f"Panel: {panel_url}")
+        lines.append(f"Detaylı tablo: {panel_url}")
     return "\n".join(lines)
 
 

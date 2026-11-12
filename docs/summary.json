@@ -3,8 +3,12 @@
  "products": [
   {
    "key": "fuerte_200_adet",
-   "name": "Fuerte avokado (200 g+), 1 adet",
+   "name": "Fuerte avokado 200g+ (tane)",
    "unit": "adet",
+   "show": {
+    "qty": 1,
+    "label": "1 adet"
+   },
    "our": 80.0,
    "cheapest": {
     "site": "Ejder Meyvesi",
@@ -66,8 +70,12 @@
   },
   {
    "key": "fuerte_250_adet",
-   "name": "Fuerte avokado (250 g+), 1 adet",
+   "name": "Fuerte avokado 250g+ (tane)",
    "unit": "adet",
+   "show": {
+    "qty": 1,
+    "label": "1 adet"
+   },
    "our": 90.0,
    "cheapest": {
     "site": "Ejder Meyvesi",
@@ -145,8 +153,12 @@
   },
   {
    "key": "fuerte_10_adet",
-   "name": "Fuerte avokado, 10'lu paket (adet fiyatı)",
+   "name": "Fuerte avokado (10'lu paket)",
    "unit": "adet",
+   "show": {
+    "qty": 10,
+    "label": "10 adet"
+   },
    "our": 74.0,
    "cheapest": {
     "site": "Ejder Meyvesi",
@@ -240,8 +252,12 @@
   },
   {
    "key": "avokado_kg",
-   "name": "Avokado, 1 kg",
+   "name": "Avokado (1 kg)",
    "unit": "kg",
+   "show": {
+    "qty": 1,
+    "label": "1 kg"
+   },
    "our": 270.0,
    "cheapest": {
     "site": "Çiftçilerden",
@@ -335,8 +351,12 @@
   },
   {
    "key": "baby_avokado",
-   "name": "Baby / bebek avokado (kg fiyatı)",
+   "name": "Baby avokado (1 kg)",
    "unit": "kg",
+   "show": {
+    "qty": 1,
+    "label": "1 kg"
+   },
    "our": 380.0,
    "cheapest": {
     "site": "Ejder Meyvesi",
@@ -398,8 +418,12 @@
   },
   {
    "key": "bacon_adet",
-   "name": "Bacon avokado, 1 adet",
+   "name": "Bacon avokado (tane)",
    "unit": "adet",
+   "show": {
+    "qty": 1,
+    "label": "1 adet"
+   },
    "our": 85.0,
    "cheapest": {
     "site": "Ejder Meyvesi",
@@ -445,8 +469,12 @@
   },
   {
    "key": "ejder_kg",
-   "name": "Ejder meyvesi, 1 kg",
+   "name": "Ejder meyvesi (1 kg)",
    "unit": "kg",
+   "show": {
+    "qty": 1,
+    "label": "1 kg"
+   },
    "our": 330.0,
    "cheapest": {
     "site": "GSR Tropik",
@@ -492,8 +520,12 @@
   },
   {
    "key": "papaya_kg",
-   "name": "Papaya, 1 kg",
+   "name": "Papaya (1 kg)",
    "unit": "kg",
+   "show": {
+    "qty": 1,
+    "label": "1 kg"
+   },
    "our": 190.0,
    "cheapest": {
     "site": "GSR Tropik",
@@ -539,8 +571,12 @@
   },
   {
    "key": "longan_kg",
-   "name": "Longan (kg fiyatına çevrilmiş)",
+   "name": "Longan (250 g)",
    "unit": "kg",
+   "show": {
+    "qty": 0.25,
+    "label": "250 g"
+   },
    "our": 1780.0,
    "cheapest": {
     "site": "Avokadocu Ayşe",
@@ -602,8 +638,12 @@
   },
   {
    "key": "mango_kg",
-   "name": "Yerli mango, 1 kg",
+   "name": "Yerli mango (1 kg)",
    "unit": "kg",
+   "show": {
+    "qty": 1,
+    "label": "1 kg"
+   },
    "our": 355.0,
    "cheapest": {
     "site": "Ailemin Avokadocusu",
@@ -681,8 +721,12 @@
   },
   {
    "key": "kamkat_kg",
-   "name": "Kamkat (kumkuat), 1 kg",
+   "name": "Kamkat (1 kg)",
    "unit": "kg",
+   "show": {
+    "qty": 1,
+    "label": "1 kg"
+   },
    "our": 230.0,
    "cheapest": null,
    "avg": null,
@@ -725,9 +769,9 @@
   }
  ],
  "alerts": [
-  "Fuerte avokado (200 g+), 1 adet: Ejder Meyvesi bizden %14 ucuz (69 vs 80 ₺/adet)",
-  "Fuerte avokado, 10'lu paket (adet fiyatı): Ejder Meyvesi bizden %9 ucuz (68 vs 74 ₺/adet)",
-  "Bacon avokado, 1 adet: Ejder Meyvesi bizden %24 ucuz (65 vs 85 ₺/adet)"
+  "Fuerte avokado 200g+ (tane): Ejder Meyvesi bizden %14 ucuz (69 vs 80 ₺/adet)",
+  "Fuerte avokado (10'lu paket): Ejder Meyvesi bizden %9 ucuz (68 vs 74 ₺/adet)",
+  "Bacon avokado (tane): Ejder Meyvesi bizden %24 ucuz (65 vs 85 ₺/adet)"
  ],
  "free_shipping": {
   "Tropik Hasat": 1500,
