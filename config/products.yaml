@@ -89,7 +89,7 @@ products:
     offers:
       - {site: Tropik Hasat, own: true, qty: 1, variant: "1 Adet", url: "https://tropikhasat.com/products/bacon-avokado-1"}
       - {site: Ejder Meyvesi, qty: 1, url: "https://ejdermeyvesi.com/1-adet-avokado-bacon"}
-      - {site: Passiflover, qty: 1, url: "https://passiflovertropikal.com/urun/bacon-avokado-adet/"}
+      - {site: Passiflover, qty: 1, url: "https://passiflovertropikal.com/urun/bacon-avokado-adet/?attribute_pa_kg-ad=1-adet"}
 
   - key: ejder_kg
     name: Ejder meyvesi (1 kg)
@@ -141,4 +141,4 @@ products:
       - {site: Bizim Tropikal, own: true, qty: 1, variant: "1 kg", url: "https://bizimtropikal.com/products/kamkat"}
       - {site: Taptaze Al, qty: 1, url: "https://www.taptazeal.com/kumkuat-1-kilo"}
       - {site: Akdeniz Hazinesi, qty: 1, url: "https://www.akdenizhazinesi.com.tr/urun/akdeniz-kamkati-kumkuat-kabuguyla-yenen-lezzet-1-kg/?attribute_agirlik=1+kg"}
-      - {site: Passiflover, qty: 1, url: "https://passiflovertropikal.com/urun/kumkuat/"}
+      - {site: Passiflover, qty: 1, url: "https://passiflovertropikal.com/urun/kumkuat/?attribute_pa_kg-ad=1-kg"}
