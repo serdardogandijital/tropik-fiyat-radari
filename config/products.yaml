@@ -15,6 +15,11 @@ free_shipping:            # ücretsiz kargo eşikleri (₺) — elle güncelleni
   Çiftçilerden: 1500
   GSR Tropik: 200
   Zahide'nin Bahçesi: null
+  Anamur Dalından: null
+  Taptaze Al: null
+  Akdeniz Hazinesi: null
+  Passiflover: null
+  Alo Tropik: null
 
 products:
   - key: fuerte_200_adet
@@ -24,6 +29,8 @@ products:
       - {site: Tropik Hasat, own: true, qty: 1, variant: "1 Adet", url: "https://tropikhasat.com/products/20-adet-fuerte-avokado250-gr-ustu"}
       - {site: Bizim Tropikal, own: true, qty: 1, variant: "1 Adet", url: "https://bizimtropikal.com/products/fuerte-avokado-50-adet-250-gram-uzeri"}
       - {site: Ejder Meyvesi, qty: 1, url: "https://ejdermeyvesi.com/1-adet-avokado-fuerte-200-250-gr-arasi"}
+      - {site: Taptaze Al, qty: 1, url: "https://www.taptazeal.com/fuerte-avokado-200-gram"}
+      - {site: Akdeniz Hazinesi, qty: 1, url: "https://www.akdenizhazinesi.com.tr/urun/avokado-1-adet-buyuk-boy-200g/"}
 
   - key: fuerte_250_adet
     name: Fuerte avokado 250g+ (tane)
@@ -33,6 +40,10 @@ products:
       - {site: Avokadocu Ayşe, qty: 1, url: "https://www.avokadocuayse.com/urunlerimiz/buyuk-boy-fuerte-avokado/?attribute_pa_adet=1-adet"}
       - {site: Ailemin Avokadocusu, qty: 1, url: "https://aileminavokadocusu.com/urun/1-adet-fuerte-avokado-100-tl-250-gr-ve-ustu/"}
       - {site: Ejder Meyvesi, qty: 1, url: "https://ejdermeyvesi.com/1-adet-avokado-fuerte-250-300-gr-arasi"}
+      - {site: Anamur Dalından, qty: 1, url: "https://anamurdalindan.com/-fuerte-avokado-adet-240-gr-ve-uzeri"}
+      - {site: Taptaze Al, qty: 1, url: "https://www.taptazeal.com/fuerte-avokado-250-gram"}
+      - {site: Akdeniz Hazinesi, qty: 1, url: "https://www.akdenizhazinesi.com.tr/urun/avokado-1-adet-jumbo-boy-250g/"}
+      - {site: Alo Tropik, qty: 1, url: "https://www.alotropik.com/avokado-1-adet"}
 
   - key: fuerte_10_adet
     name: Fuerte avokado (10'lu paket)
@@ -44,6 +55,8 @@ products:
       - {site: Avokadocu Ayşe, qty: 10, url: "https://www.avokadocuayse.com/urunlerimiz/buyuk-boy-fuerte-avokado/?attribute_pa_adet=10-adet"}
       - {site: Ailemin Avokadocusu, qty: 10, url: "https://aileminavokadocusu.com/urun/10-adet-fuerte-avokado-1000-tl-ucretsiz-kargo/"}
       - {site: Ejder Meyvesi, qty: 10, url: "https://ejdermeyvesi.com/10-adet-avokado-fuerte"}
+      - {site: Anamur Dalından, qty: 10, url: "https://anamurdalindan.com/10-adet-fuerte-avokado-240-gr-ve-uzeri"}
+      - {site: Akdeniz Hazinesi, qty: 10, url: "https://www.akdenizhazinesi.com.tr/urun/avokado-10-adet-buyuk-boy-200g/"}
 
   - key: avokado_kg
     name: Avokado (1 kg)
@@ -54,6 +67,9 @@ products:
       - {site: Çiftçilerden, qty: 1, url: "https://ciftcilerden.com/alanya-avokado-1-kg"}
       - {site: Ailemin Avokadocusu, qty: 1, url: "https://aileminavokadocusu.com/urun/1-kilo-avokado/"}
       - {site: Zahide'nin Bahçesi, qty: 1, url: "https://zahidenintropikalbahcesi.com/product/fuerte-avokado-kg/"}
+      - {site: Taptaze Al, qty: 1, url: "https://www.taptazeal.com/fuerte-avokado-buyuk-boy-1-kilo1"}
+      - {site: Akdeniz Hazinesi, qty: 1, url: "https://www.akdenizhazinesi.com.tr/urun/avokado-1-kg-yerli-antalya-avokadosu-taze-yeni-hasat/"}
+      - {site: Passiflover, qty: 1, url: "https://passiflovertropikal.com/urun/fuerte-avokado/"}
 
   - key: baby_avokado
     name: Baby avokado (1 kg)
@@ -62,6 +78,10 @@ products:
       - {site: Tropik Hasat, own: true, qty: 1, variant: "1 kg", url: "https://tropikhasat.com/products/baby-avokado"}
       - {site: Bizim Tropikal, own: true, qty: 1, variant: "1 kg", url: "https://bizimtropikal.com/products/baby-avokado"}
       - {site: Ejder Meyvesi, qty: 0.5, url: "https://ejdermeyvesi.com/bebek-avokado"}
+      - {site: Anamur Dalından, qty: 1, url: "https://anamurdalindan.com/bebek-avokado-1kg-"}
+      - {site: Taptaze Al, qty: 1, url: "https://www.taptazeal.com/bebek-avokado-1-kilo"}
+      - {site: Akdeniz Hazinesi, qty: 0.5, url: "https://www.akdenizhazinesi.com.tr/urun/bebek-avokado-finger-avokado-dalindan-taze-500-g/"}
+      - {site: Passiflover, qty: 1, url: "https://passiflovertropikal.com/urun/baby-avokado/?attribute_pa_kg-ad=1-kg"}
 
   - key: bacon_adet
     name: Bacon avokado (tane)
@@ -69,6 +89,7 @@ products:
     offers:
       - {site: Tropik Hasat, own: true, qty: 1, variant: "1 Adet", url: "https://tropikhasat.com/products/bacon-avokado-1"}
       - {site: Ejder Meyvesi, qty: 1, url: "https://ejdermeyvesi.com/1-adet-avokado-bacon"}
+      - {site: Passiflover, qty: 1, url: "https://passiflovertropikal.com/urun/bacon-avokado-adet/"}
 
   - key: ejder_kg
     name: Ejder meyvesi (1 kg)
@@ -76,6 +97,9 @@ products:
     offers:
       - {site: Tropik Hasat, own: true, qty: 1, variant: "1 kg", url: "https://tropikhasat.com/products/ejder-meyvesi-kucuk-boy"}
       - {site: GSR Tropik, qty: 1, url: "https://gsrtropik.com/ejder-meyvesi--beyaz--1-kg-p-26"}
+      - {site: Anamur Dalından, qty: 1, url: "https://anamurdalindan.com/ejder-meyvesi-1-kg"}
+      - {site: Taptaze Al, qty: 1, url: "https://www.taptazeal.com/beyaz-ejder-meyvesi-1-kilo1"}
+      - {site: Passiflover, qty: 1, url: "https://passiflovertropikal.com/urun/kirmizi-ejder-meyvesi-kg/"}
 
   - key: papaya_kg
     name: Papaya (1 kg)
@@ -83,6 +107,8 @@ products:
     offers:
       - {site: Tropik Hasat, own: true, qty: 1, variant: "1 kg", url: "https://tropikhasat.com/products/papaya"}
       - {site: GSR Tropik, qty: 1, url: "https://gsrtropik.com/papaya-1-kg-p-7"}
+      - {site: Taptaze Al, qty: 1, url: "https://www.taptazeal.com/papaya-meyvesi-1-kilo"}
+      - {site: Passiflover, qty: 1, url: "https://passiflovertropikal.com/urun/papaya/"}
 
   - key: longan_kg
     name: Longan (250 g)
@@ -92,6 +118,8 @@ products:
       - {site: Tropik Hasat, own: true, qty: 0.25, variant: "250", url: "https://tropikhasat.com/products/longan-1"}
       - {site: Avokadocu Ayşe, qty: 0.25, url: "https://www.avokadocuayse.com/urunlerimiz/longan-ejderha-gozu-meyvesi-250-gr/"}
       - {site: Ejder Meyvesi, qty: 0.125, url: "https://ejdermeyvesi.com/125-gr-longan-ejderha-gozu"}
+      - {site: Akdeniz Hazinesi, qty: 0.25, url: "https://www.akdenizhazinesi.com.tr/urun/longan-ejder-gozu-250-ml-taze-egzotik-meyve/"}
+      - {site: Passiflover, qty: 0.25, url: "https://passiflovertropikal.com/urun/longan/?attribute_pa_kg-ad=0-25"}
 
   - key: mango_kg
     name: Yerli mango (1 kg)
@@ -101,6 +129,9 @@ products:
       - {site: Bizim Tropikal, own: true, qty: 1, variant: "1 kg", url: "https://bizimtropikal.com/products/mango-yerli"}
       - {site: Ailemin Avokadocusu, qty: 1, url: "https://aileminavokadocusu.com/urun/1-kilo-mango-2/"}
       - {site: Zahide'nin Bahçesi, qty: 1, url: "https://zahidenintropikalbahcesi.com/product/mango/"}
+      - {site: Anamur Dalından, qty: 1, url: "https://anamurdalindan.com/yerli-mango-1-kg-"}
+      - {site: Taptaze Al, qty: 1, url: "https://www.taptazeal.com/yerli-mango-1-kg"}
+      - {site: Passiflover, qty: 1, url: "https://passiflovertropikal.com/urun/mango-kg/"}
 
   - key: kamkat_kg
     name: Kamkat (1 kg)
@@ -108,3 +139,6 @@ products:
     offers:
       - {site: Tropik Hasat, own: true, qty: 1, variant: "1 kg", url: "https://tropikhasat.com/products/kamkatkumkuat"}
       - {site: Bizim Tropikal, own: true, qty: 1, variant: "1 kg", url: "https://bizimtropikal.com/products/kamkat"}
+      - {site: Taptaze Al, qty: 1, url: "https://www.taptazeal.com/kumkuat-1-kilo"}
+      - {site: Akdeniz Hazinesi, qty: 1, url: "https://www.akdenizhazinesi.com.tr/urun/akdeniz-kamkati-kumkuat-kabuguyla-yenen-lezzet-1-kg/?attribute_agirlik=1+kg"}
+      - {site: Passiflover, qty: 1, url: "https://passiflovertropikal.com/urun/kumkuat/"}

@@ -68,3 +68,12 @@ def test_tropikhasat_variants():
     h = f'<script type="application/ld+json">[{json.dumps(data)}]</script>'
     assert extract_price(h, "u", "1 kg").price == 190
     assert extract_price(h, "u", "250").price is None
+
+def test_ticimax_sale_price():  # Anamur Dalından: HTML'de 120 (eski), satış 94,99
+    h = ('<div class="PriceList">120,00 ₺</div><script>var x={"productPrice":94.0495,"productPriceStr":"94,99",'
+         '"productPriceKDVIncluded":94.989995,"product":{"id":99,"urunAdi":"Fuerte","stokAdedi":882.0}}</script>')
+    r = extract_price(h, "u"); assert r.price == 94.99 and r.in_stock is True
+
+def test_ticimax_out_of_stock():
+    h = '<script>{"productPriceKDVIncluded":100.0,"product":{"id":1,"stokAdedi":0.0}}</script>'
+    assert extract_price(h, "u").in_stock is False

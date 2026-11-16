@@ -98,6 +98,23 @@ def _from_woocommerce(soup: BeautifulSoup, url: str) -> PriceResult | None:
     return None
 
 
+# ---------- 1b. Ticimax (anamurdalindan, taptazeal, alotropik ...) ----------
+# Ticimax sayfası satış fiyatını (indirim + KDV dahil) gömülü JSON'da tutar;
+# HTML'deki ilk fiyat çoğu zaman indirimden önceki fiyattır.
+
+_TICIMAX_PRICE = re.compile(r'"productPriceKDVIncluded"\s*:\s*([0-9.]+)')
+_TICIMAX_STOCK = re.compile(r'"product"\s*:\s*\{.*?"stokAdedi"\s*:\s*([0-9.]+)', re.S)
+
+
+def _from_ticimax(raw: str) -> PriceResult | None:
+    m = _TICIMAX_PRICE.search(raw)
+    if not m:
+        return None
+    st = _TICIMAX_STOCK.search(raw[m.start():m.start() + 20000])
+    stock = (float(st.group(1)) > 0) if st else None
+    return PriceResult(round(float(m.group(1)), 2), stock, "ticimax")
+
+
 # ---------- 2. JSON-LD ----------
 
 def _walk(obj):
@@ -231,7 +248,8 @@ def _page_stock(soup: BeautifulSoup) -> bool | None:
 
 def extract_price(html: str, url: str, variant: str | None = None) -> PriceResult:
     soup = BeautifulSoup(html, "html.parser")
-    for fn in (lambda: _from_woocommerce(soup, url),
+    for fn in (lambda: _from_ticimax(html),
+               lambda: _from_woocommerce(soup, url),
                lambda: _from_jsonld(soup, variant),
                lambda: _from_embedded_json(soup, variant),
                lambda: None if variant else _from_meta(soup),
